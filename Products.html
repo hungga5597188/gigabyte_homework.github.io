@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- en stand fr English-->
+  <head>
+ <title>Gigabyte</title> 
+ <meta charset="utf-8"> <!-- Character set for English-->
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: green;
+   color: green;
+   text-align: center;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 4px;
+  font-size: 12px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: green;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+
+<body style="height: 1000px">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Logo</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Events/News</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about us.html">Contacts us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Log out</a>
+    </li>
+  </ul>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+  </nav>
+</nav>
+
+<h1 style="color: green; text-align: center; padding-top: 100px; padding-bottom: 10px"> Products </h1>
+<hr class="w-50 pt-3">
+<!-- The four columns -->
+<img src="C:\Users\Admin\Desktop\preepik\2725.JPG" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+<div class="row" style="padding-left: 250px">
+  <div class="column">
+    <img src="C:\Users\Admin\Desktop\preepik\product1.PNG" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="C:\Users\Admin\Desktop\preepik\product2.PNG" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="C:\Users\Admin\Desktop\preepik\product3.PNG" alt="first bg image" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:50%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<div class="footer">
+  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+  <a href="https://www.google.com/" class="fa fa-google"></a>
+  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+  <p></p>
+</div>
+
+<h5 class="text-center" style="padding-top: 100px; padding-bottom: 50px; color: grey">There will be more</h5>
+
+</body>
+</html>
